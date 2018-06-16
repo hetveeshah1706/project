@@ -1,0 +1,28 @@
+<html>
+
+  <div class="form-group" align="center">
+    <div class="page-header">
+      <h1>LOG IN</h1></div>
+    <table>
+
+      <tr>
+        <td>EMAIL ID</td><br>
+        <input type="text" [(ngModel)]="email_id" placeholder="email_id">
+      </tr><br><br>
+      <tr>
+        <td>PASSWORD</td><br>
+        <input type="password" [(ngModel)]="password" placeholder="password">
+      </tr><br><br>
+      <tr>
+        <td colspan=3><label>Click Here For Signup</label>&nbsp;&nbsp;
+        <button (click)="onSignup()">&nbsp;&nbsp;Sign Up&nbsp;</button></td>
+      </tr><br><br>
+      <tr>
+          <td colspan=2><button (click)="onLogin()">LOG IN</button>&nbsp;&nbsp;
+          <button (click)="onForget()">FORGET PASSWORD??</button></td>
+      </tr>
+
+
+    </table>
+  </div>
+</html>

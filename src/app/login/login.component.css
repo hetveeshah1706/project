@@ -1,0 +1,20 @@
+table{
+  border:2px solid black;
+  border-collapse: separate;
+  background-color: lightgray;
+
+ }
+h1{
+  font-weight: bolder;
+  color:red;
+  align-self:center;
+  margin-left:50px;
+
+}
+button:hover{
+  background-color: blue;
+
+}
+
+
+

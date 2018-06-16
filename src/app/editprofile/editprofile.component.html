@@ -1,0 +1,41 @@
+<html>
+  <div class="form-group" align="center">
+    <h1>EDIT PROFILE</h1>
+    <table>
+      <tr>
+        <td>Email-Id</td><br>
+        <input type="email" [(ngModel)]="email_id">
+      </tr>
+      <tr>
+        <td>Password</td><br>
+        <input type="password" [(ngModel)]="password">
+      </tr>
+      <tr>
+        <td>User Name</td><br>
+        <input type="text" [(ngModel)]="user_name">
+    </tr>
+    <tr>
+      <td>Mobile No</td><br>
+      <input type="text" [(ngModel)]="mob_no">
+    </tr>
+    <tr>
+      <td>City</td>
+      <select [(ngModel)]="city">
+        <option *ngFor="let item of c">{{item}}</option>
+     </select>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <input type="radio" name="gen" [(ngModel)]="gender" value="male">male<br>
+      <input type="radio" name="gen" [(ngModel)]="gender" value="female">female<br>
+    </tr>
+    <tr>
+      <td>Address</td><br>
+      <input type="text" [(ngModel)]="address">
+    </tr>
+    <tr>
+      <button (click)="onEdit()">Update</button>
+    </tr>
+    </table>
+  </div>
+</html>

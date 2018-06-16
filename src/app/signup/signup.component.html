@@ -1,0 +1,43 @@
+<html>
+  <div class="form-group" align="center">
+    <div class="pahe-header">
+    <h1>SIGN UP</h1></div>
+    <table>
+      <tr>
+        <td>Email-Id</td><br>
+        <input type="email" [(ngModel)]="email_id" placeholder="Email-Id">
+      </tr>
+      <tr>
+        <td>Password</td><br>
+        <input type="password" [(ngModel)]="password" placeholder="Password">
+      </tr>
+      <tr>
+        <td>User Name</td><br>
+        <input type="text" [(ngModel)]="user_name" placeholder="user_name">
+    </tr>
+
+    <tr>
+      <td>Mobile No</td><br>
+      <input type="text" [(ngModel)]="mob_no" placeholder="Mobile No">
+    </tr>
+    <tr>
+      <td>City</td>
+      <select [(ngModel)]="city">
+        <option *ngFor="let item of c">{{item}}</option>
+     </select>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <input type="radio" name="gen" [(ngModel)]="gender" value="male">male<br>
+      <input type="radio" name="gen" [(ngModel)]="gender" value="female">female<br>
+    </tr>
+    <tr>
+      <td>Address</td><br>
+      <input type="text" [(ngModel)]="address" placeholder="address">
+    </tr>
+    <tr>
+      <button (click)="onAdd()">ADD</button>
+    </tr>
+    </table>
+  </div>
+</html>
